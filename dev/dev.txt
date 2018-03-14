@@ -1,0 +1,34 @@
+GENERAL RULES
+    rock, paper, scissors game
+    multiplayer allows for 2 simultaneous users
+    stores data in firebase
+        stats WL
+        chats
+    chat functionality
+    if opponent drops off, their stats are removed, remaining player's stats stay
+    can chose name before start
+
+HTML/CSS
+    rps title, centered
+    name input along with button
+    play area
+        player one
+        results
+            "player x wins"
+            "player y losses"
+            "tie"
+        player two
+    chat area
+        previous messages
+        current msg along with submit button
+
+FIREBASE/JAVASCRIPT
+    player objects on firebase created when name input
+    turn indicator also created
+    player section on web
+        name
+        rps options
+        W&L's
+    player sees their rps pick, but not opponent's
+    both players see whose turn it is
+
