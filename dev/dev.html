@@ -12,9 +12,72 @@
     <link rel="stylesheet" href="dev.css" />
 
     <title>RPS - Multiplayer</title>
+
   </head>
   <body>
-    <!-- <h1>"Red Wine, ___ " </h1> -->
+
+    <header class="container">
+        <h1 class="text-center">Rock, Paper, Scissors</h1>
+    </header>
+
+    <main class="container">
+        <!-- username input -->
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <form>
+                    <div class="form-group">
+                        <!-- <label for="">Player Name</label> -->
+                        <input type="text" class="form-control" id="" placeholder="Player Name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- play area -->
+        <br>
+        <div class="row justify-content-center">
+            <!-- player one -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <!-- results -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <!-- player two -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body"></div>                    
+                </div>
+            </div>
+        </div>
+        <!-- chat -->
+        <br>        
+        <div class="row justify-content-center">
+            <div class="col-6 card">
+                <!-- sent messages -->
+                <div class="card-body">
+
+                </div>
+                <!-- send msg -->
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="chat">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>                
+            </div>
+
+        </div>
+    </main>
+
+
 
     <!-- JavaScript -->
     <!-- jQuery --> 
@@ -44,5 +107,6 @@
     <!-- <script scr=""></script> -->
     <!-- dev.js -->
     <script src="dev.js"></script>
+
   </body>
 </html>

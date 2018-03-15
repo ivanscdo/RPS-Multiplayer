@@ -1,8 +1,4 @@
 $(document).ready(function(){
-
-    // $("h1").on("click", function(){
-    //     alert(" Success!")
-    // });
-
+// console.log("red wine, success!")
 
 });
