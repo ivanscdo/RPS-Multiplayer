@@ -31,4 +31,33 @@ FIREBASE/JAVASCRIPT
         W&L's
     player sees their rps pick, but not opponent's
     both players see whose turn it is
+    logging in 
+        name input changes to welcome msg
+        players object created
+            player 1 object created
+                name, wins, losses, choice
+            player 2 object created
+                name, wins, losses, choice
+            turn object created  when player 2 enters, set to 1
+    play
+        turn object
+            turn changes to  2 when player 1 makes choice
+            turn 3 once player 2 makes choice
+            resets to 1 after showing winner/after set amount of time (timers!)
+        player object
+            choice updates to player choice
+            wins/losses update
+        chat object created when message entered
+            msgs saved in chat object
+        if player leaves
+            disconnect mesasge
+            remove player object
+            keep messages?
+
+PROBLEM SOLVING; PROBLEM FINDING
+    player loggin
+        need to figure out how to create two different objects based on the same input field
+
+        
+
 
