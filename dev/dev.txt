@@ -50,14 +50,14 @@ FIREBASE/JAVASCRIPT
         chat object created when message entered
             msgs saved in chat object
         if player leaves
-            disconnect mesasge
+            disconnect message
             remove player object
             keep messages?
 
 PROBLEM SOLVING; PROBLEM FINDING
-    player loggin
+    player login
         need to figure out how to create two different objects based on the same input field
-
+    
         
 
 
