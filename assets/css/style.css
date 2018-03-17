@@ -1,0 +1,7 @@
+div.card {
+    height: 250px
+}
+
+div.card.messenger {
+    height: auto;
+}

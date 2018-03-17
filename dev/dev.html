@@ -28,7 +28,7 @@
                     <div class="form-group">
                         <input id="player-name" type="text" class="form-control"  placeholder="Player Name">
                     </div>
-                    <button id="player-login" type="submit" class="btn btn-primary">Submit</button>
+                    <button id="player-login" type="submit" class="btn btn-primary">Enter</button>
                 </form>
                 <div id="welcome-screen" class="row">
 
@@ -41,11 +41,20 @@
             <!-- player one -->
             <div class="col-4">
                 <div class="card">
-                    <div class="card-body player-one">
-                        <p id="waiting-p1">Waiting for Player 1</p>
-                        <p class="rock p1 weapon"></p>
-                        <p class="paper p1 weapon"></p>
-                        <p class="scissors p1 weapon"></p>
+                    <div class="row card-body ">
+                        <div class="col player-one">
+                            <p id="waiting-p1">Waiting for Player 1</p>
+                            <p class="rock p1 weapon"></p>
+                            <p class="paper p1 weapon"></p>
+                            <p class="scissors p1 weapon"></p>
+
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <div class="col p1-WL">
+                            <p class=p1-W></p>
+                            <p class=p1-L></p>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -53,6 +62,7 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
+                        <h2 id="results"></h2>
 
                     </div>
 
@@ -61,37 +71,45 @@
             <!-- player two -->
             <div class="col-4">
                 <div class="card">
-                    <div class="card-body player-two">
-                        <p id="waiting-p2">Waiting for Player 2</p>
-                        <p class="rock p2 weapon"></p>
-                        <p class="paper p2 weapon"></p>
-                        <p class="scissors p2 weapon"></p>
-                    </div>                    
+                    <div class="row card-body ">
+                        <div class="col player-two">
+                            <p id="waiting-p2">Waiting for Player 2</p>
+                            <p class="rock p2 weapon"></p>
+                            <p class="paper p2 weapon"></p>
+                            <p class="scissors p2 weapon"></p>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <div class="col p2-WL">
+                            <p class=p2-W></p>
+                            <p class=p2-L></p>
+                        </div>                      
+                    </div>                 
                 </div>
             </div>
         </div>
         <br>
         <!-- start button -->
         <div class="row justify-content-center">
-            <button id="start-button" type="submit" class="btn btn-primary">Start</button>        
+            <button id="start-button" type="submit" class="btn btn-primary">Paper... Scissors... Rock!</button>        
         </div>
         
         
         <!-- chat -->
         <br>
         <div class="row justify-content-center">
-            <div class="col-6 card">
+            <div class="col-6 card messenger">
                 <!-- sent messages -->
-                <div class="card-body">
+                <div id="sent-chats" class="card-body ">
 
                 </div>
                 <!-- send msg -->
-                <div class="card-body">
+                <div class="card-body ">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="" placeholder="chat">
+                            <input id="chat-msg" type="text" class="form-control"  placeholder="chat">
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button id="chat-btn" type="submit" class="btn btn-primary">Send</button>
                     </form>
                 </div>                
             </div>

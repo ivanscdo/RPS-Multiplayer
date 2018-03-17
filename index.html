@@ -8,10 +8,116 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>RPS - Multiplayer</title>
+
   </head>
   <body>
-    <h1>"Red Wine, Success!" </h1>
+
+    <header class="container">
+        <h1 class="text-center">Rock, Paper, Scissors!</h1>
+    </header>
+
+    <main class="container">
+        <!-- username input -->
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <form id="login-form">
+                    <div class="form-group">
+                        <input id="player-name" type="text" class="form-control"  placeholder="Player Name">
+                    </div>
+                    <button id="player-login" type="submit" class="btn btn-primary">Enter</button>
+                </form>
+                <div id="welcome-screen" class="row">
+
+                </div>
+            </div>
+        </div>
+        <!-- play area -->
+        <br>
+        <div class="row justify-content-center">
+            <!-- player one -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="row card-body ">
+                        <div class="col player-one">
+                            <p id="waiting-p1">Waiting for Player 1</p>
+                            <p class="rock p1 weapon"></p>
+                            <p class="paper p1 weapon"></p>
+                            <p class="scissors p1 weapon"></p>
+
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <div class="col p1-WL">
+                            <p class=p1-W></p>
+                            <p class=p1-L></p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- results -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 id="results"></h2>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- player two -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="row card-body ">
+                        <div class="col player-two">
+                            <p id="waiting-p2">Waiting for Player 2</p>
+                            <p class="rock p2 weapon"></p>
+                            <p class="paper p2 weapon"></p>
+                            <p class="scissors p2 weapon"></p>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <div class="col p2-WL">
+                            <p class=p2-W></p>
+                            <p class=p2-L></p>
+                        </div>                      
+                    </div>                 
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- start button -->
+        <div class="row justify-content-center">
+            <button id="start-button" type="submit" class="btn btn-primary">Paper... Scissors... Rock!</button>        
+        </div>
+        
+        
+        <!-- chat -->
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-6 card messenger">
+                <!-- sent messages -->
+                <div id="sent-chats" class="card-body ">
+
+                </div>
+                <!-- send msg -->
+                <div class="card-body ">
+                    <form>
+                        <div class="form-group">
+                            <input id="chat-msg" type="text" class="form-control"  placeholder="chat">
+                        </div>
+                        <button id="chat-btn" type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>                
+            </div>
+
+        </div>
+    </main>
+
+
 
     <!-- JavaScript -->
     <!-- jQuery --> 
@@ -38,9 +144,7 @@
     firebase.initializeApp(config);
     </script>
     <!-- game.js -->
-    <script scr=""></script>
-    <!-- dev.js -->
-    <script scr=""></script>
+    <script src="assets/javascript/game.js"></script>
     
 
 
